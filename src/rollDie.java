@@ -35,12 +35,18 @@ public class rollDie
     public String roll()
     {
         Scanner scan = new Scanner(System.in);
+        
+        
         System.out.println("choose the sides you want on your die.");
         sides = scan.nextInt();
+        
         Random generator = new Random();
+         
         roll = generator.nextInt(sides);
+        
         String output = "";
-        output += "You got a " +  roll;
+        
+        output += "the number is " +  roll;
         return output;
     }
 
